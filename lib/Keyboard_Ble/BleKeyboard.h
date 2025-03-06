@@ -55,7 +55,30 @@ const uint8_t KEY_PAGE_DOWN = 0xD6;
 const uint8_t KEY_HOME = 0xD2;
 const uint8_t KEY_END = 0xD5;
 const uint8_t KEY_CAPS_LOCK = 0xC1;
-
+const uint8_t KEY_F1 = 0xC2;
+const uint8_t KEY_F2 = 0xC3;
+const uint8_t KEY_F3 = 0xC4;
+const uint8_t KEY_F4 = 0xC5;
+const uint8_t KEY_F5 = 0xC6;
+const uint8_t KEY_F6 = 0xC7;
+const uint8_t KEY_F7 = 0xC8;
+const uint8_t KEY_F8 = 0xC9;
+const uint8_t KEY_F9 = 0xCA;
+const uint8_t KEY_F10 = 0xCB;
+const uint8_t KEY_F11 = 0xCC;
+const uint8_t KEY_F12 = 0xCD;
+const uint8_t KEY_F13 = 0xF0;
+const uint8_t KEY_F14 = 0xF1;
+const uint8_t KEY_F15 = 0xF2;
+const uint8_t KEY_F16 = 0xF3;
+const uint8_t KEY_F17 = 0xF4;
+const uint8_t KEY_F18 = 0xF5;
+const uint8_t KEY_F19 = 0xF6;
+const uint8_t KEY_F20 = 0xF7;
+const uint8_t KEY_F21 = 0xF8;
+const uint8_t KEY_F22 = 0xF9;
+const uint8_t KEY_F23 = 0xFA;
+const uint8_t KEY_F24 = 0xFB;
 
 const uint8_t KEY_NUM_0 = 0xEA;
 const uint8_t KEY_NUM_1 = 0xE1;
@@ -76,6 +99,22 @@ const uint8_t KEY_NUM_PERIOD = 0xEB;
 
 typedef uint8_t MediaKeyReport[2];
 
+const MediaKeyReport KEY_MEDIA_NEXT_TRACK = {1, 0};
+const MediaKeyReport KEY_MEDIA_PREVIOUS_TRACK = {2, 0};
+const MediaKeyReport KEY_MEDIA_STOP = {4, 0};
+const MediaKeyReport KEY_MEDIA_PLAY_PAUSE = {8, 0};
+const MediaKeyReport KEY_MEDIA_MUTE = {16, 0};
+const MediaKeyReport KEY_MEDIA_VOLUME_UP = {32, 0};
+const MediaKeyReport KEY_MEDIA_VOLUME_DOWN = {64, 0};
+const MediaKeyReport KEY_MEDIA_WWW_HOME = {128, 0};
+const MediaKeyReport KEY_MEDIA_LOCAL_MACHINE_BROWSER = {0, 1}; // Opens "My Computer" on Windows
+const MediaKeyReport KEY_MEDIA_CALCULATOR = {0, 2};
+const MediaKeyReport KEY_MEDIA_WWW_BOOKMARKS = {0, 4};
+const MediaKeyReport KEY_MEDIA_WWW_SEARCH = {0, 8};
+const MediaKeyReport KEY_MEDIA_WWW_STOP = {0, 16};
+const MediaKeyReport KEY_MEDIA_WWW_BACK = {0, 32};
+const MediaKeyReport KEY_MEDIA_CONSUMER_CONTROL_CONFIGURATION = {0, 64}; // Media Selection
+const MediaKeyReport KEY_MEDIA_EMAIL_READER = {0, 128};
 
 
 //  Low level key report: up to 6 keys and shift, ctrl etc at once

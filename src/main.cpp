@@ -80,11 +80,11 @@ void loop() {
     if(ps2x.NewButtonState(PSB_START)){
       if(ps2x.Button(PSB_START)){
         Serial.println("Start pressed");
-        bleKeyboard.press(KEY_BACKSPACE);
+        bleKeyboard.press(KEY_NUM_ENTER);
       }
       else{
         Serial.println("Start released");
-        bleKeyboard.release(KEY_BACKSPACE);
+        bleKeyboard.release(KEY_NUM_ENTER);
       }
     }
       
