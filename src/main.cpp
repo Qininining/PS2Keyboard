@@ -103,11 +103,11 @@ void loop() {
     if(ps2x.NewButtonState(PSB_PAD_UP)){
       if(ps2x.Button(PSB_PAD_UP)){
         Serial.println("Up pressed");
-        bleKeyboard.press(KEY_UP_ARROW);
+        bleKeyboard.press(KEY_NUM_8);
       }
       else{
         Serial.println("Up released");
-        bleKeyboard.release(KEY_UP_ARROW);
+        bleKeyboard.release(KEY_NUM_8);
       }
     }
     
@@ -125,11 +125,11 @@ void loop() {
     if(ps2x.NewButtonState(PSB_PAD_DOWN)){
       if(ps2x.Button(PSB_PAD_DOWN)){
         Serial.println("Down pressed");
-        bleKeyboard.press(KEY_DOWN_ARROW);
+        bleKeyboard.press(KEY_NUM_9);
       }
       else{
         Serial.println("Down released");
-        bleKeyboard.release(KEY_DOWN_ARROW);
+        bleKeyboard.release(KEY_NUM_9);
       }
     }
     
@@ -148,22 +148,22 @@ void loop() {
     if(ps2x.NewButtonState(PSB_L3)){
       if(ps2x.Button(PSB_L3)){
         Serial.println("L3 pressed");
-        // 可以在这里添加L3对应的动作
+        bleKeyboard.press(KEY_NUM_6);
       }
       else{
         Serial.println("L3 released");
-        // 可以在这里添加L3释放后需要执行的动作
+        bleKeyboard.release(KEY_NUM_6);
       }
     }
     
     if(ps2x.NewButtonState(PSB_R3)){
       if(ps2x.Button(PSB_R3)){
         Serial.println("R3 pressed");
-        // 可以在这里添加R3对应的动作
+        bleKeyboard.press(KEY_NUM_7);
       }
       else{
         Serial.println("R3 released");
-        // 可以在这里添加R3释放后需要执行的动作
+        bleKeyboard.release(KEY_NUM_7);
       }
     }
     
