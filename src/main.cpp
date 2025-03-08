@@ -114,11 +114,11 @@ void loop() {
     if(ps2x.NewButtonState(PSB_PAD_RIGHT)){
       if(ps2x.Button(PSB_PAD_RIGHT)){
         Serial.println("Right pressed");
-        bleKeyboard.press(KEY_RIGHT_ARROW);
+        bleKeyboard.press(KEY_NUM_7);
       }
       else{
         Serial.println("Right released");
-        bleKeyboard.release(KEY_RIGHT_ARROW);
+        bleKeyboard.release(KEY_NUM_7);
       }
     }
     
@@ -136,11 +136,11 @@ void loop() {
     if(ps2x.NewButtonState(PSB_PAD_LEFT)){
       if(ps2x.Button(PSB_PAD_LEFT)){
         Serial.println("Left pressed");
-        bleKeyboard.press(KEY_LEFT_ARROW);
+        bleKeyboard.press(KEY_NUM_6);
       }
       else{
         Serial.println("Left released");
-        bleKeyboard.release(KEY_LEFT_ARROW);
+        bleKeyboard.release(KEY_NUM_6);
       }
     }
     
